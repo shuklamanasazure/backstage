@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: manas
+  annotations:
+    github.com/user-id: "162401773"
+spec:
+  profile:
+    displayName: Manas
+  memberOf:
+    - platform-engineering
