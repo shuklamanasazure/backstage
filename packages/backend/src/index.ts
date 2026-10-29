@@ -70,3 +70,7 @@ backend.add(import('@backstage/plugin-signals-backend'));
 backend.add(import('@backstage/plugin-mcp-actions-backend'));
 
 backend.start();
+backend.add(import('@backstage/plugin-auth-backend'));
+backend.add(
+  import('@backstage/plugin-auth-backend-module-github-provider'),
+);
