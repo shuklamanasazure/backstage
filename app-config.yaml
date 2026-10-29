@@ -108,6 +108,9 @@ backend:
   #   keys:
   #     - secret: ${BACKEND_SECRET}
   baseUrl: http://51.21.132.65:7007
+  auth:
+    keys:
+      - secret: ${BACKEND_SECRET}
   listen:
     port: 7007
     # Uncomment the following host directive to bind to specific interfaces
@@ -168,8 +171,8 @@ auth:
   providers:
     github:
       development:
-        clientId: ${GITHUB_CLIENT_ID}
-        clientSecret: ${GITHUB_CLIENT_SECRET}
+        clientId: ${AUTH_GITHUB_CLIENT_ID}
+        clientSecret: ${AUTH_GITHUB_CLIENT_SECRET}
         signIn:
           resolvers:
             - resolver: userIdMatchingUserEntityAnnotation
