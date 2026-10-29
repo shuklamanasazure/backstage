@@ -215,8 +215,10 @@ catalog:
         - allow: [User, Group]
 
     ## Uncomment these lines to add more example data
-    # - type: url
-    #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
+    - type: url
+      target: https://github.com/shuklamanasazure/backstage/blob/main/catalog-info.yaml
+      rules:
+          - allow: [Component, User]
 
     ## Uncomment these lines to add an example org
     # - type: url
