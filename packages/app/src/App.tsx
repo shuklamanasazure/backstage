@@ -7,6 +7,7 @@ import { githubAuthApiRef } from '@backstage/core-plugin-api';
 import { SignInPageBlueprint } from '@backstage/plugin-app-react';
 import { SignInPage } from '@backstage/core-components';
 import { createFrontendModule } from '@backstage/frontend-plugin-api';
+import techdocsPlugin from '@backstage/plugin-techdocs/alpha';
 
 
 const signInPage = SignInPageBlueprint.make({
@@ -33,7 +34,7 @@ export default createApp({
 }),],
   components: {
     SignInPage: SignInPage,
-    TechDocsIndexPage: TechDocsIndexPage,
+    //TechDocsIndexPage: TechDocsIndexPage,
   },
   apis: {
     [githubAuthApiRef]: githubAuthApiRef,
